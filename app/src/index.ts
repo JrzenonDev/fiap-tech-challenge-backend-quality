@@ -9,7 +9,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 
 mongoose
-  .connect(process.env.MONGO_URL || "mongodb://mongo:27017/meubanco")
+  .connect(process.env.MONGO_URL || "mongodb://mongo:27017/blogging")
   .then(() => console.log("MongoDB conectado com sucesso"))
   .catch((err) => console.error("Erro ao conectar ao MongoDB:", err));
 

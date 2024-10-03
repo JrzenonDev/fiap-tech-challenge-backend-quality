@@ -5,7 +5,7 @@ services:
     build:
       context: .
     environment:
-      - MONGO_URL=mongodb://mongo:27017/meubanco
+      - MONGO_URL=mongodb://mongo:27017/blogging
     depends_on:
       - mongo
     networks:
@@ -19,6 +19,8 @@ services:
       - mongo-data:/data/db
     networks:
       - app-network
+    ports:
+      - "27017:27017"
 
 volumes:
   mongo-data:
