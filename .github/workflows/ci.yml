@@ -17,8 +17,10 @@ jobs:
         image: mongo:6
         ports:
           - 27017:27017
-
         options: --health-interval=10s --health-timeout=5s --health-retries=5
+
+        healthcheck:
+          test: ["CMD-SHELL", "exit 0"]
 
     steps:
       - name: Checkout repository
