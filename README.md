@@ -57,6 +57,10 @@ Follow the steps below to set up the development environment:
 
 The application will be available at http://localhost:3000.
 
+5. **To access Swagger and see the API use cases:**
+
+The application will be available at http://localhost:3000/api-docs/.
+
 ## Application Architecture
 
 The project structure is organized as follows:
