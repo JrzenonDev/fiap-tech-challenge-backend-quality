@@ -1,12 +1,15 @@
 import express from "express";
 import mongoose from "mongoose";
 import postRoutes from "./routes/postRoutes";
+import { setupSwagger } from "./swagger";
 
 const app = express();
 const port = process.env.PORT || 3000;
 
 // Middleware parsing  JSON
 app.use(express.json());
+
+setupSwagger(app);
 
 mongoose
   .connect(process.env.MONGO_URL || "mongodb://mongo:27017/blogging")
