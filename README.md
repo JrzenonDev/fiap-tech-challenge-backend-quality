@@ -31,8 +31,8 @@ Follow the steps below to set up the development environment:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/usuario/nome-do-repositorio.git
-   cd nome-do-repositorio
+   git clone https://github.com/usuario/fiap-tech-challenge-backend-quality.git
+   cd fiap-tech-challenge-backend-quality
 
    ```
 
